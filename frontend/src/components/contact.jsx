@@ -8,7 +8,7 @@ const Contact = () => {
     <>
     <div className="flex flex-col md:flex-row bg-white rounded-2xl shadow-md overflow-hidden max-w-5xl mx-auto my-10">
       {/* Left Section */}
-      <div className="bg-red-50 p-8 flex-1">
+      <div className="bg-red-50 p-8 flex-1 order-2 md:order-1">
         <p className="text-red-700 uppercase font-semibold tracking-wide mb-2">
           Contact Us
         </p>
@@ -58,7 +58,7 @@ const Contact = () => {
       </div>
 
       {/* Right Section with Image */}
-      <div className="flex-1">
+      <div className="flex-1 order-1 md:order-2">
         <img
           src="/contact.jpg"
           alt="Contact"

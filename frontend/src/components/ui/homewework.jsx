@@ -28,7 +28,7 @@ const HowWeWork = () => {
     <div className="bg-[#1a0d0d] py-12 px-4 md:px-10">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-stretch">
         {/* Left - Steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 order-2 md:order-1 sm:grid-cols-2 gap-6">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -49,7 +49,7 @@ const HowWeWork = () => {
 
         {/* Right - Image & Text */}
         <div
-          className="relative rounded-2xl overflow-hidden flex flex-col justify-center items-center text-center p-8 bg-cover bg-center"
+          className="relative order-1 md:order-2 rounded-2xl overflow-hidden flex flex-col justify-center items-center text-center p-8 bg-cover bg-center"
           style={{
             backgroundImage:
               "url('/group.jpg')",
