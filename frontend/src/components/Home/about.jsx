@@ -10,17 +10,17 @@ const About = () => {
           <img
             src="/about1.jpg"
             alt="Team"
-            className="rounded-2xl shadow-md object-cover h-[300px] w-full"
+            className="rounded-2xl shadow-md object-cover h-[300px] w-full transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-[#0089FF]"
           />
 
           <div className="grid grid-cols-2 gap-6">
             <img
               src="/about2.jpg"
               alt="Work"
-              className="rounded-2xl shadow-md object-cover h-[250px] w-full"
+              className="rounded-2xl shadow-md object-cover h-[250px] w-full transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-[#0089FF]"
             />
             <div
-              className="text-white text-center flex flex-col items-center justify-center rounded-2xl shadow-md p-6"
+              className="text-white text-center flex flex-col items-center justify-center rounded-2xl shadow-md p-6 transition-transform duration-300 hover:scale-105 hover:shadow-xl"
               style={{ backgroundColor: "black" }}
             >
               <h2 className="text-3xl font-bold">13+</h2>
@@ -31,10 +31,7 @@ const About = () => {
 
         {/* Right Side (Content) */}
         <div className="flex flex-col justify-center">
-          <p
-            className="uppercase font-semibold mb-2"
-            style={{ color: "#173f73" }}
-          >
+          <p className="uppercase font-semibold mb-2 text-[#0089FF]">
             About Ritaxes
           </p>
           <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-snug">
@@ -61,8 +58,11 @@ const About = () => {
           <div className="grid grid-cols-2 gap-y-3 gap-x-6 mb-6">
             {["Bookkeeping", "Tax Filings", "GST Compliance", "Business Advisory"].map(
               (item, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <FaCheckCircle style={{ color: "#173f73" }} />
+                <div
+                  key={index}
+                  className="flex items-center space-x-2 transition-transform duration-300 hover:scale-105"
+                >
+                  <FaCheckCircle className="text-[#0089FF]" />
                   <span>{item}</span>
                 </div>
               )
@@ -71,8 +71,8 @@ const About = () => {
 
           {/* Button */}
           <button
-            className="px-6 py-3 text-white rounded-full hover:opacity-90 transition w-fit"
-            style={{ backgroundColor: "#173f73" }}
+            className="px-6 py-3 text-white rounded-full transition duration-300 w-fit hover:scale-105 hover:shadow-lg"
+            style={{ backgroundColor: "#0089FF" }}
           >
             Learn More
           </button>
