@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute"></div>
 
       {/* Content */}
-      <div className="relative max-w-7xl  px-6 text-white">
+      <div className="relative max-w-7xl px-6 text-white">
         <div className="max-w-xl bg-black/60 p-8 rounded-lg">
           <p className="text-sm uppercase tracking-widest mb-3">
             We Are Tax Advisor
@@ -25,7 +25,12 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex space-x-4">
-            <button className="px-6 py-3 bg-red-700 rounded-full hover:bg-red-800 transition">
+            <button
+              className="px-6 py-3 rounded-full transition"
+              style={{ backgroundColor: "#173f73" }}
+              onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#0f2c4f")}
+              onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#173f73")}
+            >
               Get Started
             </button>
             <button className="px-6 py-3 border border-white rounded-full hover:bg-white hover:text-black transition">

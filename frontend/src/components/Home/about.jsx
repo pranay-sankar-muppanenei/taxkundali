@@ -7,21 +7,22 @@ const About = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
         {/* Left Side (Images + Experience Card) */}
         <div className="flex flex-col space-y-6">
-          {/* Top Image (Full Width) */}
           <img
             src="/about1.jpg"
             alt="Team"
             className="rounded-2xl shadow-md object-cover h-[300px] w-full"
           />
 
-          {/* Bottom Row (Image + Experience Card) */}
           <div className="grid grid-cols-2 gap-6">
             <img
               src="/about2.jpg"
               alt="Work"
               className="rounded-2xl shadow-md object-cover h-[250px] w-full"
             />
-            <div className="bg-black text-white text-center flex flex-col items-center justify-center rounded-2xl shadow-md p-6">
+            <div
+              className="text-white text-center flex flex-col items-center justify-center rounded-2xl shadow-md p-6"
+              style={{ backgroundColor: "black" }}
+            >
               <h2 className="text-3xl font-bold">13+</h2>
               <p className="mt-2 text-lg">Years of Experience</p>
             </div>
@@ -30,7 +31,10 @@ const About = () => {
 
         {/* Right Side (Content) */}
         <div className="flex flex-col justify-center">
-          <p className="uppercase text-red-700 font-semibold mb-2">
+          <p
+            className="uppercase font-semibold mb-2"
+            style={{ color: "#173f73" }}
+          >
             About Ritaxes
           </p>
           <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-snug">
@@ -55,26 +59,21 @@ const About = () => {
 
           {/* Bullet Points */}
           <div className="grid grid-cols-2 gap-y-3 gap-x-6 mb-6">
-            <div className="flex items-center space-x-2">
-              <FaCheckCircle className="text-red-700" />
-              <span>Bookkeeping</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <FaCheckCircle className="text-red-700" />
-              <span>Tax Filings</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <FaCheckCircle className="text-red-700" />
-              <span>GST Compliance</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <FaCheckCircle className="text-red-700" />
-              <span>Business Advisory</span>
-            </div>
+            {["Bookkeeping", "Tax Filings", "GST Compliance", "Business Advisory"].map(
+              (item, index) => (
+                <div key={index} className="flex items-center space-x-2">
+                  <FaCheckCircle style={{ color: "#173f73" }} />
+                  <span>{item}</span>
+                </div>
+              )
+            )}
           </div>
 
           {/* Button */}
-          <button className="px-6 py-3 bg-red-700 text-white rounded-full hover:bg-red-800 transition w-fit">
+          <button
+            className="px-6 py-3 text-white rounded-full hover:opacity-90 transition w-fit"
+            style={{ backgroundColor: "#173f73" }}
+          >
             Learn More
           </button>
         </div>
