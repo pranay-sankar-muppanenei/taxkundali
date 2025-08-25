@@ -54,7 +54,7 @@ const Header = () => {
         <div className="hidden md:block">
           <a
             href="#"
-            className="px-5 py-2 bg-[#0089FF] text-white rounded-full hover:bg-blue-700 transition"
+            className="px-5 py-2 bg-gradient-to-r from-[#0089FF] to-[#005FCC] text-white rounded-full hover:bg-blue-700 transition"
           >
             Contact Us
           </a>
@@ -111,7 +111,7 @@ const Header = () => {
           <a href="/contact" className="block hover:text-[#0089FF]">Contact</a>
           <a
   href="#"
-  className="block px-5 py-2 bg-[#0089FF]/60 text-white rounded-full 
+  className="block px-5 py-2 bg-gradient-to-r from-[#0089FF] to-[#005FCC] text-white rounded-full 
              hover:bg-[#0089FF]/80 transition text-center 
              backdrop-blur-xl border border-white/20 shadow-lg"
 >

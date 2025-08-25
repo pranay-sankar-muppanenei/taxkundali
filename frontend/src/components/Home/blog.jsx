@@ -35,12 +35,13 @@ export default function BlogSection() {
         {/* Heading */}
         <div className="flex justify-between items-center mb-12 flex-wrap">
           <div>
-            <p className="uppercase text-red-700 font-semibold mb-2">Blog & News</p>
+            <p className="uppercase text-[#0089FF] font-semibold mb-2">Blog & News</p>
             <h2 className="text-4xl font-bold text-gray-900 leading-snug">
-              Latest News and Blog from <span className="text-red-700">Ritaxes</span>
+              Latest News and Blog from{" "}
+              <span className="text-[#0089FF]">Ritaxes</span>
             </h2>
           </div>
-          <button className="px-6 py-3 bg-red-700 text-white rounded-full hover:bg-red-800 transition mt-6 md:mt-0">
+          <button className="px-6 py-3 bg-gradient-to-r from-[#0089FF] to-[#005FCC] text-white rounded-full shadow-lg hover:opacity-90 transition mt-6 md:mt-0">
             View More
           </button>
         </div>
@@ -50,16 +51,16 @@ export default function BlogSection() {
           {blogs.map((blog) => (
             <div
               key={blog.id}
-              className="bg-red-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+              className="bg-blue-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
             >
               {/* Image */}
               <div className="relative">
                 <img
                   src={blog.image}
                   alt={blog.title}
-                  className="w-full h-56 hover:scale-104 hover:rotate-1 object-cover"
+                  className="w-full h-56 object-cover hover:scale-105 hover:rotate-2 transition-transform duration-300"
                 />
-                <span className="absolute top-4 left-4 bg-red-700 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase">
+                <span className="absolute top-4 left-4 bg-gradient-to-r from-[#0089FF] to-[#005FCC] text-white text-xs font-semibold px-3 py-1 rounded-full uppercase">
                   {blog.category}
                 </span>
               </div>
@@ -67,7 +68,7 @@ export default function BlogSection() {
               {/* Content */}
               <div className="p-6">
                 <div className="flex items-center text-sm text-gray-500 mb-3">
-                  <FaCalendarAlt className="mr-2 text-red-600" />
+                  <FaCalendarAlt className="mr-2 text-[#0089FF]" />
                   {blog.date}
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">

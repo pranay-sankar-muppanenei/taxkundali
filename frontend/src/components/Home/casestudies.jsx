@@ -14,16 +14,15 @@ const CaseStudies = () => {
       desc: "An NRI consultant was being taxed in both India and the UK. We analyzed DTAA provisions and structured his income to ensure taxation in only one jurisdiction, legally saving over ₹5 lakh in taxes.",
       image: "/case2.jpg",
     },
-  
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="flex justify-between items-center flex-wrap mb-12">
           <div>
-            <p className="uppercase text-red-700 font-semibold mb-2">
+            <p className="uppercase text-[#0089FF] font-semibold mb-2">
               Case Studies
             </p>
             <h2 className="text-4xl font-bold text-gray-900 mb-4 leading-snug">
@@ -34,7 +33,7 @@ const CaseStudies = () => {
               overcome tax and compliance challenges successfully.
             </p>
           </div>
-          <button className="px-6 py-3 bg-red-700 text-white rounded-full hover:bg-red-800 transition mt-6 md:mt-0">
+          <button className="px-6 py-3 bg-gradient-to-r from-[#0089FF] to-[#005FCC] text-white rounded-full hover:bg-blue-700 transition mt-6 md:mt-0">
             View All Cases
           </button>
         </div>
@@ -44,16 +43,16 @@ const CaseStudies = () => {
           {cases.map((item, index) => (
             <div
               key={index}
-              className="relative hover:scale-102 hover:rotate-1 rounded-2xl overflow-hidden shadow-md group h-72 flex items-end"
+              className="relative rounded-2xl overflow-hidden shadow-md group h-72 flex items-end transform transition duration-300 hover:scale-105 hover:shadow-xl border border-white/20"
               style={{
                 backgroundImage: `url(${item.image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
-              {/* Overlay Card */}
-              <div className="w-full bg-black/60 p-6 backdrop-blur-sm">
-                <p className="text-sm uppercase text-gray-200 font-semibold tracking-wide mb-2">
+              {/* Overlay Card with Glass Effect */}
+              <div className="w-full bg-black/50 backdrop-blur-sm p-6 transition-all duration-300 group-hover:bg-black/60">
+                <p className="text-sm uppercase text-white font-semibold tracking-wide mb-2">
                   {item.category}
                 </p>
                 <h3 className="text-xl font-bold text-white mb-2">

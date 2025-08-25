@@ -31,8 +31,8 @@ const About = () => {
 
         {/* Right Side (Content) */}
         <div className="flex flex-col justify-center">
-          <p className="uppercase font-semibold mb-2 text-[#0089FF]">
-            About Ritaxes
+          <p className="uppercase  font-semibold mb-2 text-[#0089FF]">
+            About Tax Kundali
           </p>
           <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-snug">
             Innovative Strategies for Tax Prosperity
@@ -71,8 +71,8 @@ const About = () => {
 
           {/* Button */}
           <button
-            className="px-6 py-3 text-white rounded-full transition duration-300 w-fit hover:scale-105 hover:shadow-lg"
-            style={{ backgroundColor: "#0089FF" }}
+            className="px-6 py-3 text-white bg-gradient-to-r from-[#0089FF] to-[#005FCC] rounded-full transition duration-300 w-fit hover:scale-105 hover:shadow-lg"
+            
           >
             Learn More
           </button>

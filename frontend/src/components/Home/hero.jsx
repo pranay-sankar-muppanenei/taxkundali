@@ -26,8 +26,8 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex space-x-4">
             <button
-              className="px-6 py-3 rounded-full transition"
-              style={{ backgroundColor: "#0089FF" }}
+              className="px-6 py-3 bg-gradient-to-r from-[#0089FF] to-[#005FCC] rounded-full transition"
+          
               onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#0f2c4f")}
               onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#173f73")}
             >

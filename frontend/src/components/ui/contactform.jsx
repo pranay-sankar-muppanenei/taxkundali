@@ -46,12 +46,12 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto my-10 bg-red-50 p-6 md:p-8 rounded-2xl shadow-md flex flex-col md:flex-row gap-6">
+    <div className="max-w-7xl mx-auto my-10 bg-[#f8faff] p-6 md:p-10 rounded-2xl shadow-lg flex flex-col md:flex-row gap-8">
       
       {/* Left Side - Image */}
       <div className="md:w-1/2">
         <img
-          src="/sample.jpg" // replace with your image
+          src="/sample.jpg"
           alt="Contact Illustration"
           className="w-full h-full object-cover rounded-2xl"
         />
@@ -59,8 +59,8 @@ const ContactForm = () => {
 
       {/* Right Side - Form */}
       <div className="md:w-1/2">
-        <h2 className="text-3xl font-bold mb-6">Send a message</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <h2 className="text-3xl font-bold mb-6 text-[#0089FF]">Send a Message</h2>
+        <form onSubmit={handleSubmit} className="space-y-5">
           {/* Name */}
           <div>
             <input
@@ -69,7 +69,7 @@ const ContactForm = () => {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-3 bg-white rounded-full border border-gray-300 focus:outline-none focus:border-red-500"
+              className="w-full p-3 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#0089FF]"
             />
             {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
           </div>
@@ -83,7 +83,7 @@ const ContactForm = () => {
                 placeholder="Phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full p-3 bg-white rounded-full border border-gray-300 focus:outline-none focus:border-red-500"
+                className="w-full p-3 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#0089FF]"
               />
               {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
             </div>
@@ -95,7 +95,7 @@ const ContactForm = () => {
                 placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-3 bg-white rounded-full border border-gray-300 focus:outline-none focus:border-red-500"
+                className="w-full p-3 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#0089FF]"
               />
               {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
             </div>
@@ -109,7 +109,7 @@ const ContactForm = () => {
               placeholder="Subject"
               value={formData.subject}
               onChange={handleChange}
-              className="w-full p-3 bg-white rounded-full border border-gray-300 focus:outline-none focus:border-red-500"
+              className="w-full p-3 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#0089FF]"
             />
             {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
           </div>
@@ -122,7 +122,7 @@ const ContactForm = () => {
               rows="4"
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-3 bg-white rounded-xl border border-gray-300 focus:outline-none focus:border-red-500"
+              className="w-full p-3 bg-white/80 backdrop-blur-sm rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#0089FF]"
             ></textarea>
             {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
           </div>
@@ -130,7 +130,7 @@ const ContactForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-red-700 text-white p-3 rounded-full hover:bg-red-800 transition duration-200"
+            className="w-full bg-gradient-to-r from-[#0089FF] to-[#005FCC] text-white p-3 rounded-full hover:shadow-lg hover:scale-[1.02] transition-transform duration-300"
           >
             Submit Form
           </button>
